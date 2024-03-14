@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   background: #aaa;
   color: #333;
@@ -16,10 +16,31 @@ body {
 }
 
 .modal {
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 8px;
+  gap: 16px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modalButtons {
+  display: flex;
+  gap: 4px;
 }
 
 .icon {
@@ -31,6 +52,7 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 }
